@@ -22,9 +22,6 @@ def extractKeywords(text_list):
         else:
             keywords_list.append(extract[0][1])
 
-        # print(extract[0][1]+ ", "+ extract[1][1])
-        # print(" ")
-
     return keywords_list
 
 
@@ -35,8 +32,6 @@ def describeMyWords(title, excerpt, title_keywords, excerpt_keywords):
     for idx, total_keywords in enumerate(zip(title, excerpt, title_keywords, excerpt_keywords)):
 
         txt = total_keywords[0] + total_keywords[1] + total_keywords[2] + total_keywords[3]
-        # print(txt)
-        # print(type(txt))
 
         if "GPS" in txt:
             my_keywords_list[idx] = "GPS improvement "
