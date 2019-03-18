@@ -1,8 +1,5 @@
 from bs4 import BeautifulSoup
 from dateutil.parser import parse
-from selenium import webdriver
-from numpy import *
-import pandas as pd
 
 def replace(str):
     
@@ -67,14 +64,3 @@ def uberCrawl(driver):
 
     
     return uber_result
-
-# print(uber_total_posts_num)
-# f.close
-
-# 
-# options = webdriver.ChromeOptions()
-# options.add_argument('headless')
-# 
-# driver = webdriver.Chrome('/Users/hyoukjang/Downloads/chromedriver', options=options)
-# uberCrawl(driver)
-

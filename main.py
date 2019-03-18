@@ -1,8 +1,7 @@
-from numpy import *
-import pandas as pd
 import matplotlib
+import pandas as pd
+
 matplotlib.use('TkAgg')
-import matplotlib.pyplot as plt
 from selenium import webdriver
 import uber
 import lyft
@@ -69,9 +68,6 @@ lyft_result_dataframe = pd.DataFrame(lyft_result, columns= header)
 
 result_dataframe = uber_result_dataframe.append(lyft_result_dataframe)
 
-# print(result_dataframe.shape)
-
-#temp = result_dataframe.sort_values(by=['title'], axis=0)
 temp = result_dataframe.drop_duplicates(['title'], keep='first')
 temp = temp.replace('engineering', 'general-engineering')
 temp = temp.replace('uberdata', 'data')
@@ -82,21 +78,8 @@ temp['keywords_title'] = extractKeywords(temp['title'].tolist())
 temp['keywords_excerpt'] = extractKeywords(temp['excerpt'].tolist())
 temp['myKeywords'] = describeMyWords(temp['title'].tolist(), temp['excerpt'].tolist(), temp['keywords_title'].tolist(), temp['keywords_excerpt'].tolist())
 
-# print(temp['myKeywords'])
-
-
-
-# print(temp['company'].value_counts())
-# print(temp['category'].value_counts())
-# print(temp['year'].value_counts())
 
 
 
 temp.to_csv('total_mobility_engineering_blog_posts.csv', index=False)
-
-# uber_result_dataframe['title_ko'] = translate(uber_result_dataframe['title'].tolist())
-# uber_result_dataframe['subtitle_ko'] = translate(uber_result_dataframe['subtitle'].tolist())
-# uber_result_dataframe['excerpt_ko'] = translate(uber_result_dataframe['excerpt'].tolist())
-
-# print(uber_result_dataframe.head())
 

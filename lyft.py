@@ -19,9 +19,6 @@ def lyftCrawl(driver):
     lyft_url_list = [lyft_source_url + query for query in lyft_query]
 
     lyft_result=[]
-    # f = open('lyft_post_list.csv', 'w', encoding='utf-8', newline='')
-    # wr = csv.writer(f)
-    # wr.writerow(['category', 'title', 'subtitle', 'link','year','month', 'day','excerpt'])
 
 
 
@@ -79,5 +76,4 @@ def lyftCrawl(driver):
             lyft_result.append(['lyft', category, title, subtitle, href, year, month, day, excerpt])
 
     return lyft_result
-# f.close()
 
