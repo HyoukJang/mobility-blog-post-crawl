@@ -1,23 +1,22 @@
 # Mobility-Engineering-blog-post-crawl
-To collect engineering blog posts infos (NOT whole post contents) of leading mobility companies such as Uber, Lyft.
+To collect engineering blog posts infos (NOT whole post contents) of leading mobility companies such as Uber, Lyft
 
 ##Engineering Blog Lists
 
-Uber Engineering Blog
-- https://eng.uber.com
-- Category : AI, Architecture, Culture, General-Engineering, Mobile, Open Source, Uber Data
+- Uber Engineering Blog
+    - https://eng.uber.com
+    - AI, Architecture, Culture, General-Engineering, Mobile, Open Source, Uber Data
 
-Lyft Engineering Blog
- - https://eng.lyft.com
- - Category : Data, Data Science, Engineering, Mobile, Product, Security
+- Lyft Engineering Blog
+    - https://eng.lyft.com
+    - Data, Data Science, Engineering, Mobile, Product, Security
  
- In this project, I merged several categories between Uber and Lyft contents becasuse of readability as below.
- 
- - General-Engineering - Engineering
- - Uber Data - Data - Data Science
- - Open source articles - open source
+    In this project, I merged several categories between Uber and Lyft contents becasuse of readability as below.
+    - General-Engineering - Engineering
+    - Uber Data - Data - Data Science
+    - Open source articles - open source
 
-Totally 279 blog posts info included.
+    Totally 279 blog posts info included.
 
 
 ## Requirements
