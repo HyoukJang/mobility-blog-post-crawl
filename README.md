@@ -21,6 +21,9 @@ To collect engineering blog posts infos (NOT whole post contents) of leading mob
 
 ## Requirements
 
+To crawl blog post info(Title, Excerpt, etc), use Selenium and Chromedriver.
+Chromedriver(for OS X) is included. If you use Windows, Linux, etc, please include the concrete chromedriver file in the root directory.  
+
 Basic data science libraries and rake-nltk to extract keywords.
 
 ```
