@@ -27,26 +27,26 @@ def extractKeywords(text_list):
 
 def describeMyWords(title, excerpt, title_keywords, excerpt_keywords):
 
-    my_keywords_list = [None] * len(title_keywords)
+    my_keywords_list = [""] * len(title_keywords)
 
     for idx, total_keywords in enumerate(zip(title, excerpt, title_keywords, excerpt_keywords)):
 
         txt = total_keywords[0] + total_keywords[1] + total_keywords[2] + total_keywords[3]
 
         if "GPS" in txt:
-            my_keywords_list[idx] = "GPS improvement "
+            my_keywords_list[idx] += "GPS improvement "
 
         if "Mapbox" in txt:
-            my_keywords_list[idx] = "Map"
+            my_keywords_list[idx] += "Map "
 
         if "map" in txt:
-            my_keywords_list[idx] = "Map"
+            my_keywords_list[idx] += "Map "
 
         if "visualization" in txt:
-            my_keywords_list[idx] = "Visualization"
+            my_keywords_list[idx] = "Visualization "
 
         if "kepler.gl" in txt:
-            my_keywords_list[idx] = "Visualization"
+            my_keywords_list[idx] = "Visualization "
 
 
     return my_keywords_list
