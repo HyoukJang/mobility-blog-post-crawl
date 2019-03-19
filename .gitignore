@@ -116,3 +116,6 @@ fabric.properties
 .idea/vcs.xml
 __pycache__/lyft.cpython-37.pyc
 __pycache__/uber.cpython-37.pyc
+.idea/encodings.xml
+.idea/markdown-navigator.xml
+.idea/markdown-navigator/profiles_settings.xml
