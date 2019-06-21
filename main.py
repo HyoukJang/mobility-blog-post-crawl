@@ -6,6 +6,7 @@ from selenium import webdriver
 import uber
 import lyft
 from rake_nltk import Rake
+from datetime import datetime
 
 
 
@@ -79,7 +80,7 @@ temp['keywords_excerpt'] = extractKeywords(temp['excerpt'].tolist())
 temp['myKeywords'] = describeMyWords(temp['title'].tolist(), temp['excerpt'].tolist(), temp['keywords_title'].tolist(), temp['keywords_excerpt'].tolist())
 
 
+filename = "./total_mobility_engineering_blog_posts_" + datetime.today().strftime("%Y%m%d") + ".csv"
 
-
-temp.to_csv('total_mobility_engineering_blog_posts.csv', index=False)
+temp.to_csv(filename, index=False)
 

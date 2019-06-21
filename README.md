@@ -16,13 +16,14 @@ To collect engineering blog posts infos (NOT whole post contents) of leading mob
     - Uber Data - Data - Data Science
     - Open source articles - open source
 
-    Totally 279 blog posts info included.
 
 
 ## Requirements
 
 To crawl blog post info(Title, Excerpt, etc), use Selenium and Chromedriver.
 Chromedriver(for OS X) is included. If you use Windows, Linux, etc, please include the concrete chromedriver file in the root directory.  
+
+**Notice! Chromedriver ver. is 75.0.3770.90. Please check chrome version which you have before run** 
 
 Basic data science libraries and rake-nltk to extract keywords.
 
